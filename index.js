@@ -31,4 +31,8 @@ app.use("/users", userRoutes);
     });
 }*/
 
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`API is now online on port ${ process.env.PORT || 3000 }`)
+});
+
 module.exports = { app, mongoose };
